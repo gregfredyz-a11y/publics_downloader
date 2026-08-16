@@ -9,7 +9,7 @@ def fast_generate_public_key(priv_key_int):
     return pub_point[0]
 
 def main():
-    with open("allpubs.txt", "a") as all:
+    with open("minuses.txt", "a") as all:
         for i in range(2000000):
             l = randint(1, 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141)
             pub = fast_generate_public_key(l)
